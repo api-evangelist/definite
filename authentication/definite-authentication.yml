@@ -1,0 +1,42 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.definite.app/docs/definite-api
+docs:
+- https://www.definite.app/docs/definite-api
+- https://www.definite.app/docs/mcp/mcp
+- https://www.definite.app/security
+summary:
+  types: [http, oauth2]
+  http_schemes: [bearer]
+  oauth2_flows: [authorizationCode]
+  sso: [SAML, OIDC, Google Workspace]
+schemes:
+- name: apiKeyBearer
+  type: http
+  scheme: bearer
+  location: header
+  header: Authorization
+  format: '{user_id}-{api_key_suffix}'
+  note: >-
+    Primary REST API auth. Send "Authorization: Bearer <API_KEY>". API keys are
+    created/copied from the bottom-left user menu in the Definite app. Used
+    across the v1 REST API, v3 MCP HTTP endpoint, and v4 webhook endpoints.
+- name: oauth2Mcp
+  type: oauth2
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://api.definite.app/oauth/authorize
+    tokenUrl: https://api.definite.app/oauth/token
+    pkce: S256
+    scopes:
+      mcp: Access the Definite MCP server tools.
+  source: /.well-known/oauth-authorization-server
+  note: >-
+    OAuth 2.1 authorization-code + PKCE flow advertised for MCP clients;
+    refresh_token grant supported; token_endpoint_auth_methods_supported none
+    (public client).
+- name: sso
+  type: openIdConnect
+  note: >-
+    Enterprise SSO via SAML / OIDC (Google Workspace) for app + on-prem sign-in;
+    documented on the security page and on-prem SSO docs.
