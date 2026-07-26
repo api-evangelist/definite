@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.definite.app/docs/on-prem/cli
+name: definite
+description: >-
+  First-party `definite` CLI used to install, operate, and exercise an on-prem /
+  BYOC Definite deployment. Drives the self-hosted install across AWS (EKS, RDS,
+  S3), GCP (GKE, Cloud SQL, GCS), and Azure (AKS, Azure Database for PostgreSQL,
+  Blob Storage), largely via Terraform.
+docs:
+- https://www.definite.app/docs/on-prem/cli
+- https://www.definite.app/docs/on-prem/aws
+- https://www.definite.app/docs/on-prem/gcp
+- https://www.definite.app/docs/on-prem/azure
+surface:
+- group: install
+  purpose: Stand up and configure an on-prem Definite deployment in your own cloud account.
+- group: operate
+  purpose: Operate and exercise a running on-prem deployment.
+notes: >-
+  Command surface captured at group level from the on-prem docs; individual
+  subcommands are not fully enumerated in the public docs as of capture date.

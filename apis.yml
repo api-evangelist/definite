@@ -1,22 +1,146 @@
 aid: definite
 name: Definite
-description: Definite is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Definite is an all-in-one, AI-native data platform that consolidates data
+  integration, warehouse storage, a semantic layer, BI dashboards, and AI agents
+  into a single product. It ships 500+ managed data connectors, a DuckDB /
+  DuckLake lakehouse, a Cube-based semantic layer, and Fi, a natural-language AI
+  data analyst that builds complete data apps rather than just dashboards.
+  Definite speaks the Model Context Protocol natively, exposing 40+ tools across
+  six categories so Claude, Cursor, or any agent can query data, manage syncs,
+  update semantic models, and build dashboards directly. The whole stack is
+  self-hostable into a customer's own cloud account (BYOC) or on-prem, including
+  the AI analyst, so data never leaves the environment. Its REST API supports
+  stream ingestion into DuckLake, signed-URL file uploads, webhook-triggered
+  Python pipelines, and embedding of Docs and data apps in external web apps.
 url: https://raw.githubusercontent.com/api-evangelist/definite/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.definite.app/favicon.ico
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enrichment-pipeline
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Data
+- Analytics
+- Business Intelligence
+- Data Integration
+- Data Warehouse
+- Lakehouse
+- Semantic Layer
+- Artificial Intelligence
+- AI Agents
+- Model Context Protocol
+- ETL
+apis:
+- name: Definite API
+  description: >-
+    The Definite REST API for programmatic access to the Definite data platform:
+    stream JSON ingestion into DuckLake, signed-URL file uploads to Definite
+    Drive, webhook-triggered Python pipelines, push-based data ingestion, and
+    embedding of Docs and data apps. Authenticated with a bearer API key; the
+    platform also exposes a native Model Context Protocol (MCP) server.
+  humanURL: https://www.definite.app/docs/definite-api
+  baseURL: https://api.definite.app/v1/
+  tags:
+  - Data
+  - Analytics
+  - Ingestion
+  - Webhooks
+  properties:
+  - type: Documentation
+    url: https://www.definite.app/docs/definite-api
+  - type: MCPServer
+    url: mcp/definite-mcp.yml
+  - type: Webhooks
+    url: asyncapi/definite-webhooks.yml
+common:
+- type: TrustCenter
+  url: security/definite-trust-center.yml
+- type: DomainSecurity
+  url: security/definite-domain-security.yml
+- type: Website
+  url: https://www.definite.app/
+- type: DeveloperPortal
+  url: https://www.definite.app/docs
+- type: Documentation
+  url: https://www.definite.app/docs
+- type: APIReference
+  url: https://www.definite.app/docs/definite-api
+- type: GettingStarted
+  url: https://www.definite.app/docs/getting-started
+- type: Blog
+  url: https://www.definite.app/blog
+- type: Support
+  url: https://www.definite.app/contact
+- type: Pricing
+  url: https://www.definite.app/pricing
+- type: SignUp
+  url: https://www.definite.app/signup
+- type: Login
+  url: https://www.definite.app/signin
+- type: TermsOfService
+  url: https://www.definite.app/terms
+- type: PrivacyPolicy
+  url: https://www.definite.app/privacy
+- type: GitHubOrganization
+  url: https://github.com/definite-app
+- type: StatusPage
+  url: https://status.definite.app
+- type: Compliance
+  url: https://www.definite.app/security
+- type: MCPServer
+  url: mcp/definite-mcp.yml
+- type: LLMsTxt
+  url: llms/definite-llms.txt
+- type: Packages
+  url: packages/definite-packages.yml
+- type: SDKs
+  url: packages/definite-packages.yml
+- type: CLI
+  url: cli/definite-cli.yml
+- type: Authentication
+  url: authentication/definite-authentication.yml
+- type: OAuthScopes
+  url: scopes/definite-scopes.yml
+- type: WellKnown
+  url: well-known/definite-well-known.yml
+- type: Conventions
+  url: conventions/definite-conventions.yml
+- type: Lifecycle
+  url: lifecycle/definite-lifecycle.yml
+- type: Conformance
+  url: conformance/definite-conformance.yml
+- type: Components
+  url: components/definite-components.yml
+- type: Webhooks
+  url: asyncapi/definite-webhooks.yml
+- type: AgentSkill
+  url: skills/_index.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

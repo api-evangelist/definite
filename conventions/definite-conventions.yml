@@ -1,0 +1,55 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.definite.app/docs/definite-api
+docs:
+- https://www.definite.app/docs/definite-api
+- https://www.definite.app/docs/definite-api/webhooks
+- https://www.definite.app/docs/definite-api/stream
+conventions:
+  authentication:
+    style: bearer-api-key
+    header: Authorization
+    value: 'Bearer <API_KEY>'
+    ref: authentication/definite-authentication.yml
+  versioning:
+    style: uri-path
+    versions: [v1, v3, v4]
+    notes: >-
+      The REST base is https://api.definite.app/v1/. The MCP HTTP endpoint is
+      served under /v3/mcp/http and webhook execution under /v4/webhook/. Version
+      is carried in the URL path.
+    ref: lifecycle/definite-lifecycle.yml
+  transport:
+    protocol: https
+    formats: [application/json]
+  webhooks:
+    supported: true
+    style: inbound-trigger
+    endpoint: POST https://api.definite.app/v4/webhook/docs/{doc_id}/execute
+    payload_fields: [data, environmentVariables, datasetKeys]
+    large_payloads: >-
+      Webhook body is written to a file exposed via the WEBHOOK_DATA_FILE env
+      var to the executing Python pipeline, rather than passed inline.
+    ref: asyncapi/definite-webhooks.yml
+  ingestion:
+    stream: >-
+      Stream API ingests JSON directly into the DuckLake lakehouse over HTTPS.
+    file_upload: >-
+      File Upload API stores files in Definite Drive via signed URLs.
+    push_based: >-
+      Push-based ingestion lets a customer-run extractor deliver data for
+      sensitive or private-network deployments.
+  idempotency:
+    documented: false
+    notes: >-
+      No idempotency-key contract is documented in the public API docs as of the
+      capture date; not asserted.
+  pagination:
+    documented: false
+  rate_limiting:
+    documented: false
+  errors:
+    ref: null
+    notes: >-
+      No published REST error-code registry found; the platform returns standard
+      HTTP status codes.

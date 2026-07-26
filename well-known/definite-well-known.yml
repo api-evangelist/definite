@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+host: https://api.definite.app
+documents:
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: definite-oauth-authorization-server.json
+  note: >-
+    RFC 8414 authorization-server metadata for the Definite MCP OAuth flow.
+    issuer https://api.definite.app; authorization_code + refresh_token grants;
+    PKCE S256 required; scopes_supported [mcp].
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-protected-resource
+  status: 404
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+other_hosts:
+- host: https://www.definite.app
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

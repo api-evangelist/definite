@@ -1,0 +1,16 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/definite-app/claude-skills
+note: >-
+  Definite publishes an official Agent Skills plugin marketplace for Claude Code,
+  Cursor, and other agents at github.com/definite-app/claude-skills (MIT). The
+  `definite` skill loads automatically for data-related requests and drives the
+  platform through the Definite MCP server (https://api.definite.app/v3/mcp/http).
+skills:
+- file: definite-data-platform.md
+  name: Operate the Definite data platform via MCP
+  published: https://github.com/definite-app/claude-skills
+  api: mcp/definite-mcp.yml
+  operations: [run_sql_query, run_cube_query, list_cube_models, save_cube_model,
+    create_integration, list_integrations, configure_sync, list_sync_runs,
+    create_doc, update_doc, execute_doc, read_drive_file, write_drive_file]

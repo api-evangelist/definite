@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://api.definite.app/.well-known/oauth-authorization-server
+docs: https://www.definite.app/docs/mcp/mcp
+schemes:
+- name: oauth2Mcp
+  source: /.well-known/oauth-authorization-server
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://api.definite.app/oauth/authorize
+    tokenUrl: https://api.definite.app/oauth/token
+    pkce: S256
+scopes:
+- scope: mcp
+  description: >-
+    Grants an OAuth-authorized MCP client access to the Definite Model Context
+    Protocol server tools (query, semantic layer, integrations, syncs, docs,
+    drive). The only scope advertised in the authorization-server metadata.
+  flows: [authorizationCode]
+  sources: [/.well-known/oauth-authorization-server]

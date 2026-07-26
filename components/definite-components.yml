@@ -1,0 +1,19 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.definite.app/docs/definite-api/embed
+docs:
+- https://www.definite.app/docs/definite-api/embed
+- https://www.definite.app/docs/analyze-build/docs/data-apps
+components:
+- family: Embeds
+  kind: embedded-analytics
+  description: >-
+    Embed Definite Docs and data apps directly into an external web application.
+  ref: https://www.definite.app/docs/definite-api/embed
+- family: Data Apps
+  kind: client-side-runtime
+  description: >-
+    Interactive React applications rendered inside Definite Docs, running
+    client-side DuckDB WASM and Perspective.js with a built-in component library.
+  libraries: [DuckDB WASM, Perspective.js, React]
+  ref: https://www.definite.app/docs/analyze-build/docs/data-apps

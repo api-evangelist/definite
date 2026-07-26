@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.definite.app/docs/definite-api/webhooks
+spec_type: Webhooks
+surface: inbound
+description: >-
+  Definite documents inbound webhooks that trigger Definite Python pipelines from
+  any external system over HTTPS. Not an AsyncAPI event-emission surface — these
+  are HTTP trigger endpoints the platform receives.
+webhooks:
+- name: execute-doc-pipeline
+  method: POST
+  endpoint: https://api.definite.app/v4/webhook/docs/{doc_id}/execute
+  auth: 'Authorization: Bearer <API_KEY>'
+  request_body:
+    content_type: application/json
+    fields:
+    - name: data
+      description: Arbitrary JSON object written as a file in the execution sandbox.
+    - name: environmentVariables
+      description: Additional environment variables injected into the sandbox.
+    - name: datasetKeys
+      description: Array of dataset names to execute (defaults to all Python datasets).
+  notes: >-
+    Large payloads are written to a file exposed via the WEBHOOK_DATA_FILE env
+    var rather than passed inline.

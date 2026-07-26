@@ -1,0 +1,107 @@
+# Definite
+
+> Definite product documentation.
+
+## Getting Started
+
+- [What is Definite](https://www.definite.app/docs/getting-started.md): An all-in-one data platform for startups and growing teams.
+- [Connect Your Data](https://www.definite.app/docs/getting-started/connect-your-data.md): Set up data extractors or connect your existing database to Definite.
+- [Build Your First Doc](https://www.definite.app/docs/getting-started/build-your-first-doc.md): Create your first Doc in Definite and start visualizing your data.
+
+## Analyze & Build
+
+- [Analyze & Build](https://www.definite.app/docs/analyze-build.md): Explore your data and build Docs with Definite
+- [Introduction to Docs](https://www.definite.app/docs/analyze-build/docs.md): Docs are where you explore and visualize your data, build reports, and share insights with your team.
+- [Creating and Managing Docs](https://www.definite.app/docs/analyze-build/docs/creating-and-managing-docs.md): Learn how to create, build, and manage Docs in Definite
+- [Filters](https://www.definite.app/docs/analyze-build/docs/filters.md): Use prominent filters to let viewers slice data across all tiles in a Doc.
+- [Pipelines and Automations](https://www.definite.app/docs/analyze-build/docs/pipelines.md): Build multi-step data pipelines with dependencies, schedule them on a cron, and send results to Slack or email.
+- [Introduction to Tiles](https://www.definite.app/docs/analyze-build/docs/tiles.md): Learn how tiles work and how to create them in Definite Docs
+- [Tile Types Reference](https://www.definite.app/docs/analyze-build/docs/tile-types.md): Configuration options and examples for KPI, Chart, Table, and Markdown tiles
+- [Data Apps](https://www.definite.app/docs/analyze-build/docs/data-apps.md): Build interactive React applications with client-side DuckDB WASM, Perspective.js, and a built-in component library inside Definite Docs
+- [Uploading Files](https://www.definite.app/docs/analyze-build/uploading-files.md): Upload files to analyze in your Docs
+
+## Destinations
+
+- [Destinations](https://www.definite.app/docs/destinations.md): Push query results and visualizations to external tools your team uses.
+- [Slack](https://www.definite.app/docs/destinations/slack.md): Connect Slack and push query results and charts to channels.
+- [Google Sheets](https://www.definite.app/docs/destinations/gsheets.md): Connect Google Sheets and push query results to spreadsheets.
+
+## Extracting from Data Sources
+
+- [Extractor Integrations](https://www.definite.app/docs/extractors.md): Pulling data into your data warehouse.
+- [Amazon Selling Partner Extractor](https://www.definite.app/docs/extractors/amazon-seller-central.md): Pulling data from Amazon Selling Partner using the Selling Partner API
+- [Airtable Extractor](https://www.definite.app/docs/extractors/airtable.md): Pulling data from Airtable
+- [Attio Extractor](https://www.definite.app/docs/extractors/attio.md): Pulling data from Attio
+- [Facebook Ads Extractor](https://www.definite.app/docs/extractors/facebookads.md): Pulling data from Facebook Ads
+- [Google Ads Extractor](https://www.definite.app/docs/extractors/googleads.md): Pulling campaign performance data from Google Ads
+- [Google Analytics Extractor](https://www.definite.app/docs/extractors/googleanalytics.md): Pulling data from GA4
+- [Google Search Console Extractor](https://www.definite.app/docs/extractors/googlesearchconsole.md): Pulling data from Google Search Console
+- [Google Sheets Extractor](https://www.definite.app/docs/extractors/googlesheets.md): Pulling data from Google Sheets
+- [Google Sheet Querying](https://www.definite.app/docs/extractors/gsheetquerying.md): Query Google Sheet data using SQL in DuckDB.
+- [HubSpot Extractor](https://www.definite.app/docs/extractors/hubspot.md): Pulling data from HubSpot
+- [Intercom Extractor](https://www.definite.app/docs/extractors/intercom.md): Pulling data from Intercom
+- [Klaviyo Extractor](https://www.definite.app/docs/extractors/klaviyo.md): Pulling data from Klaviyo
+- [Linear Extractor](https://www.definite.app/docs/extractors/linear.md): Pulling data from Linear
+- [NetSuite Extractor](https://www.definite.app/docs/extractors/netsuite.md): Pulling data from NetSuite
+- [Notion Extractor](https://www.definite.app/docs/extractors/notion.md): Pulling data from Notion
+- [PostHog](https://www.definite.app/docs/extractors/posthog.md): Pulling data from PostHog using AWS S3
+- [Quickbooks Extractor](https://www.definite.app/docs/extractors/quickbooks.md): Pulling data from Quickbooks
+- [Salesforce Extractor](https://www.definite.app/docs/extractors/salesforce.md): Pulling data from Salesforce
+- [Salesloft Extractor](https://www.definite.app/docs/extractors/salesloft.md): Pulling data from Salesloft
+- [Shopify Extractor](https://www.definite.app/docs/extractors/shopify.md): Pulling data from Shopify
+- [Stripe Extractor](https://www.definite.app/docs/extractors/stripe.md): Pulling data from Stripe
+- [Typeform Extractor](https://www.definite.app/docs/extractors/typeform.md): Pulling data from Typeform
+- [Zendesk Extractor](https://www.definite.app/docs/extractors/zendesk.md): Pulling data from Zendesk
+- [Zoho CRM Extractor](https://www.definite.app/docs/extractors/zohocrm.md): Pulling data from Zoho CRM
+
+## Connect Your Database
+
+- [Connect Your Database](https://www.definite.app/docs/connect-your-database.md): Connect your existing data warehouse to Definite and query it directly.
+- [Snowflake](https://www.definite.app/docs/connect-your-database/snowflake.md)
+- [Postgres](https://www.definite.app/docs/connect-your-database/postgres.md)
+- [Redshift](https://www.definite.app/docs/connect-your-database/redshift.md)
+- [Bigquery](https://www.definite.app/docs/connect-your-database/bigquery.md)
+- [S3](https://www.definite.app/docs/connect-your-database/s3.md)
+- [Setting A Primary Data Source](https://www.definite.app/docs/connect-your-database/primarydatasource.md): Optional step for setting a default data source
+- [Authorizing Definite's IP Address](https://www.definite.app/docs/connect-your-database/whitelist.md): Guide to authorize / whitelist Definite's IP Address for your database
+
+## Data Modeling
+
+- [Data Modeling With Cube](https://www.definite.app/docs/data-modeling.md): Definite uses an open source semantic layer, Cube.js, for data modeling and defining metrics
+
+## AI & Agents
+
+- [AI in Docs](https://www.definite.app/docs/analyze-build/ai-in-docs.md): Use Fi, Definite's AI assistant, to create and manage Docs with natural language
+- [Fi Memory](https://www.definite.app/docs/analyze-build/fi-memory.md): Give Fi persistent context (business glossary, metric definitions, naming conventions) that applies across every conversation in your workspace.
+- [MCP Server](https://www.definite.app/docs/mcp/mcp.md): Connect Claude to your Definite data using the Model Context Protocol
+- [Agent Reference](https://www.definite.app/docs/mcp/agent-reference.md): Complete reference for using Definite from Claude Code, Cursor, or any AI agent
+
+## Definite API
+
+- [Definite API](https://www.definite.app/docs/definite-api.md): How to access and use the Definite API
+- [Stream API](https://www.definite.app/docs/definite-api/stream.md): Ingest JSON data directly into DuckLake via HTTPS
+- [File Upload API](https://www.definite.app/docs/definite-api/file-upload.md): Upload files to Definite Drive via signed URLs
+- [Push-Based Data Ingestion](https://www.definite.app/docs/definite-api/push-based-ingestion.md): Run your own data extractor for sensitive or private network deployments
+- [Webhooks](https://www.definite.app/docs/definite-api/webhooks.md): Trigger Definite Python pipelines from any external system via HTTPS
+- [Definite Embed](https://www.definite.app/docs/definite-api/embed.md): How to embed Definite docs and data apps in your web application
+
+## Custom Python Functions
+
+- [Custom Functions](https://www.definite.app/docs/custom-functions.md): Running custom Python scripts/jobs in Definite
+- [Definite SDK](https://www.definite.app/docs/custom-functions/definite-sdk.md): Python library for interacting with Definite API and tools
+- [Custom Integration](https://www.definite.app/docs/custom-functions/custom-integration.md): Connect to any data source with secure credential storage
+
+## Workspace
+
+- [Restricting Access for Specific Users](https://www.definite.app/docs/workspace.md)
+- [Sharing & Permissions](https://www.definite.app/docs/workspace/sharing-and-permissions.md): How access works for Docs, projects, and team members in Definite
+
+## On-Prem
+
+- [On-Prem](https://www.definite.app/docs/on-prem.md): Run Definite in your own cloud account.
+- [Agent setup](https://www.definite.app/docs/on-prem/agent-setup.md): Point a coding agent (Claude Code, Cursor, Windsurf) at this page and it will walk a human through an on-prem Definite install end to end.
+- [CLI](https://www.definite.app/docs/on-prem/cli.md): Install and use the `definite` CLI to operate and exercise an on-prem deployment.
+- [Install on AWS](https://www.definite.app/docs/on-prem/aws.md): Stand up Definite in your own AWS account: EKS, RDS, S3, all driven by Terraform and the `definite` CLI.
+- [Install on GCP](https://www.definite.app/docs/on-prem/gcp.md): Stand up Definite in your own GCP project: GKE, Cloud SQL Postgres, GCS, driven by `gcloud` and the `definite` CLI.
+- [Install on Azure](https://www.definite.app/docs/on-prem/azure.md): Stand up Definite in your own Azure account: AKS, Azure Database for PostgreSQL, and Azure Blob Storage, driven by `az` and the `definite` CLI.
+- [Google SSO](https://www.definite.app/docs/on-prem/sso.md): Sign in to your on-prem Definite deployment with Google Workspace via OIDC.

@@ -1,0 +1,16 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/project/definite-sdk/
+packages:
+- language: python
+  registry: pypi
+  name: definite-sdk
+  url: https://pypi.org/project/definite-sdk/
+  install: pip install definite-sdk
+  version: 0.1.20
+  official: true
+  description: >-
+    Definite SDK for Python — a first-party client library for interacting with
+    the Definite API and platform tools (state store, integrations, custom
+    functions). Referenced from the Definite docs at
+    https://www.definite.app/docs/custom-functions/definite-sdk

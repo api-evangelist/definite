@@ -1,0 +1,44 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://www.definite.app/docs/mcp/mcp
+server:
+  name: definite
+  transport: http
+  url: https://api.definite.app/v3/mcp/http
+  install: >-
+    claude mcp add definite --transport http https://api.definite.app/v3/mcp/http
+    --header "Authorization: YOUR_API_KEY"
+auth:
+  methods:
+  - type: api_key
+    header: Authorization
+    note: Bearer-style API key from the Definite app user menu.
+  - type: oauth2
+    note: >-
+      OAuth 2.1 authorization-code + PKCE (S256), scope "mcp", per
+      /.well-known/oauth-authorization-server on api.definite.app.
+tool_count: 40+
+docs:
+- https://www.definite.app/docs/mcp/mcp
+- https://www.definite.app/docs/mcp/agent-reference
+- https://www.definite.app/blog/manage-data-platform-claude-code
+tool_categories:
+- name: Data Querying
+  description: Execute SQL or semantic-layer queries.
+  example_tools: [run_sql_query, run_cube_query]
+- name: Semantic Layer
+  description: Manage Cube metric/model definitions.
+  example_tools: [list_cube_models, save_cube_model]
+- name: Integrations
+  description: Connect and manage data sources.
+  example_tools: [create_integration, list_integrations]
+- name: Syncs
+  description: Configure and monitor sync pipelines.
+  example_tools: [configure_sync, list_sync_runs]
+- name: Docs & Dashboards
+  description: Build and run Docs / visualizations.
+  example_tools: [create_doc, update_doc, execute_doc]
+- name: Drive & Files
+  description: Store and retrieve files in Definite Drive.
+  example_tools: [read_drive_file, write_drive_file]

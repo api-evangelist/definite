@@ -1,0 +1,12 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://trust.definite.app/
+url: https://trust.definite.app/
+certifications:
+- SOC 2
+evidence:
+- source: https://trust.definite.app/
+  keywords:
+  - soc 2
+  - trust center
