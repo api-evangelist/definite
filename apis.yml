@@ -47,6 +47,19 @@ tags:
 - Semantic Layer
 - Artificial Intelligence
 - AI Agents
+- MCP
+- ETL
+tags_raw:
+- Company
+- Data
+- Analytics
+- Business Intelligence
+- Data Integration
+- Data Warehouse
+- Lakehouse
+- Semantic Layer
+- Artificial Intelligence
+- AI Agents
 - Model Context Protocol
 - ETL
 apis:
@@ -60,6 +73,11 @@ apis:
   humanURL: https://www.definite.app/docs/definite-api
   baseURL: https://api.definite.app/v1/
   tags:
+  - Data
+  - Analytics
+  - Ingestion
+  - Webhook
+  tags_raw:
   - Data
   - Analytics
   - Ingestion
