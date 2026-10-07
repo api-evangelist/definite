@@ -1,0 +1,53 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.definite.app/pricing
+sources:
+- https://www.definite.app/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed+licensed
+  method: page
+  read: '2026-10-07'
+  evidence: On-prem deployment available →
+  managed_tier: Standard
+published: true
+note: Flat-price tiers plus credit-based usage (1 credit = 1 compute-hour unit or 100K AI tokens; extras
+  $1 each, storage $0.05/GB/mo). Page states private deployment in your own cloud and on-prem available
+  on Enterprise.
+plan_count: 4
+currency: USD
+plans:
+- name: Free
+  price_text: $0 forever
+  price: 0
+  currency: USD
+  period: month
+  unit: plan
+  included_quota: 2 users, 2 connectors, Fi AI assistant, daily sync, 1 GB storage, 5 credits / month
+- name: Standard
+  price_text: $250 / month
+  price: 250
+  currency: USD
+  period: month
+  unit: plan
+  included_quota: Unlimited users, unlimited connectors (500+ sources), API access, hourly sync, 10 GB
+    storage, 100 credits / month
+  overage: Credit overage $1 per credit; storage overage $0.05/GB/month
+- name: Enterprise
+  price_text: Custom
+  period: none
+  included_quota: 1,000+ credits / month, SSO (SAML/OIDC), SOC 2 Type II (in progress), near real-time
+    sync, audit logs & SCIM, dedicated support & SLA
+  overage: Contact sales
+- name: Data Team as a Service (add-on)
+  price_text: $2,500 / month or $100 / hr · ad hoc
+  currency: USD
+  period: month
+  unit: add-on
+  included_quota: Unlimited requests to senior data engineers
