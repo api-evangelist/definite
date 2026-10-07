@@ -101,6 +101,8 @@ apis:
   - type: Webhooks
     url: asyncapi/definite-webhooks.yml
 common:
+- type: Plans
+  url: plans/definite-plans-pricing.yml
 - url: https://www.definite.app/rss.xml
   type: BlogRSS
 - type: TrustCenter
