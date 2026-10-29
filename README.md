@@ -64,6 +64,123 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Definite is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Definite is an all-in-one, AI-native data platform that consolidates data integration, warehouse storage, a semantic layer, BI dashboards, and AI agents into a single product. It ships 500+ managed data connectors, a DuckDB / DuckLake lakehouse, a Cube-based semantic layer, and Fi, a natural-language AI data analyst that builds complete data apps rather than just dashboards. Definite speaks the Model Context Protocol natively, exposing 40+ tools across six categories so Claude, Cursor, or any agent can query data, manage syncs, update semantic models, and build dashboards directly. The whole stack is self-hostable into a customer's own cloud account (BYOC) or on-prem, including the AI analyst, so data never leaves the environment. Its REST API supports stream ingestion into DuckLake, signed-URL file uploads, webhook-triggered Python pipelines, and embedding of Docs and data apps in external web apps.
 
-Backed by: y-combinator
+**Areas:** Company · Data · Analytics · Business Intelligence · Data Integration · Data Warehouse · Lakehouse · Semantic Layer · Artificial Intelligence · AI Agents · MCP · ETL
+
+## Definite on APIs.io
+
+Everything profiled for Definite is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/definite/](https://apis.io/providers/definite/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Definite API](https://apis.io/apis/definite/definite-api/) — The Definite REST API for programmatic access to the Definite data platform: stream JSON ingestion into DuckLake, signed-URL file uploads to Definite Drive,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Definite Webhooks](https://apis.io/asyncapis/definite/definite-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [definite](https://apis.io/servers/definite/definite/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Definite Authentication](https://apis.io/security/definite/definite-authentication/)
+- [Definite Domain Security](https://apis.io/security/definite/definite-domain-security/)
+- [Definite Trust Center](https://apis.io/security/definite/definite-trust-center/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Definite Scopes](https://apis.io/scopes/definite/definite-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Definite Plans Pricing](https://apis.io/plans/definite/definite-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.definite.app/)
+- [Documentation](https://www.definite.app/docs)
+- [Getting started](https://www.definite.app/docs/getting-started)
+- [API reference](https://www.definite.app/docs/definite-api)
+- [Pricing](https://www.definite.app/pricing)
+- [Sign up](https://www.definite.app/signup)
+- [Support](https://www.definite.app/contact)
+- [Blog](https://www.definite.app/blog)
+- [Compliance](https://www.definite.app/security)
+- [Terms of service](https://www.definite.app/terms)
+- [Privacy policy](https://www.definite.app/privacy)
+- [GitHub](https://github.com/definite-app)
+- [Status](https://status.definite.app)
+
+## API Evangelist rating
+
+**Kin Score 59.2** — strong · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 78.6 |
+| Access clarity | 92.1 |
+
+**Agent readiness 40.3** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 36.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/definite/](https://apis.io/providers/definite/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Definite: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/definite/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
